@@ -1,5 +1,3 @@
-# Lesson SE-T21
-# Task CapstoneProject II - Files
 
 
 # task_manager.py--a program for a small business that manages tasks
@@ -22,7 +20,6 @@ while True:
     # Open user.txt file and until username and password entered match one of the
     #   username  and corresponding password in the file, keep requesting to login.
     # Once there is match, quit loop.
-
     with open('user.txt', 'r') as user_data:
         u_name = ""
         passwd = ""
@@ -42,7 +39,6 @@ while True:
 
 # Presenting the menu to the user and  making sure that
 #   the user input is converted to lower case.
-
 while True:
         
     if user_name == "admin":
@@ -74,11 +70,9 @@ while True:
 #====Compute Selected====
 
     # Add a new user to the user.txt file
-
     if menu == 'r':
 
         # Check if user has permission to add a new user and request new user data.
-
         if user_name == "admin" :
             new_user = input("\n\t\t\tPlease enter a username for the new user: ")
             while True:
@@ -86,19 +80,16 @@ while True:
                 repeat_passwd = input("\n\t\t\tConfirm password: ")
             
                 # Check if the provided password matches the confirmed password
-
                 if new_passwd == repeat_passwd:
                     passwd = new_passwd
 
                     # If passwords match, append data of the added user to the user.txt file.
-
                     with open("user.txt", "a") as user_data: 
                         user_data.write( new_user + ", " + passwd + "\n")
                         break
 
                 # If passwords do not match, print an error message and request 
                 #   the user to enter the passwords again.
-
                 else:
                     print("\n\t\t\t***Passwords do not match!***\n")
 
@@ -107,17 +98,14 @@ while True:
 
 
     # Add a new task to tasks.txt file
-
     elif menu == 'a':
         
         # Get todays date from the datetime module and convert to 
         #   desired date format.
-
         date_today = datetime.date.today()
         current_date = date_today.strftime("%d %b %Y")
 
         # Request the user to enter data of the new task.
-
         assign_user = input("\n\t\t\tPlease enter the user you wish to assign the task to: ")
         task = input("\t\t\tPlease enter the title of the task: ")
         description = input("\t\t\tEnter a description of the task: ")
@@ -126,7 +114,6 @@ while True:
         completion = "No"
 
         # Append data to tasks.txt file.
-
         with open("tasks.txt", "a") as user_tasks:
             first_part = (f"{assign_user}, {task}, {description},") 
             second_part= (f" {assign_date}, {due_date}, {completion}" ) 
@@ -135,7 +122,6 @@ while True:
 
     # Read the tasks from tasks.txt file and print *all tasks* to the console in the 
     #   format of Output 2 in the task PDF(i.e. include spacing and labelling).
-
     elif menu == 'va':
         
         with open('tasks.txt', 'r') as user_tasks:
@@ -175,7 +161,6 @@ while True:
 
     # Read the tasks from tasks.txt file and print the *users tasks* to the console in the 
     #   format of Output 2 in the task PDF(i.e. include spacing and labelling)
-
     elif menu == 'vm':
                  
         with open("tasks.txt", "r") as user_tasks:
@@ -216,7 +201,6 @@ while True:
 
     # Compute and display user and tasks statistics.
     # This option is only available for admin users.
-
     elif menu == "s":
 
         if user_name == "admin":
@@ -249,13 +233,11 @@ while True:
 
 
     # Option to exit the program
-
     elif menu == 'e':
         print('\n\t\t\tGoodbye!!!\n')
         exit()
 
     # When selected is not in the menu, display an error message.
-
     else:
         print("\n\t\t\t***You have made a wrong choice, Please Try again***\n")
 
