@@ -1,0 +1,5 @@
+admin, Register Users with taskManager.py, Use taskManager.py to add the usernames and passwords for all team members that will be using this program., 10 Oct 2019, 20 Oct 2019, No
+admin, Assign initial tasks, Use taskManager.py to assign each team member with appropriate tasks, 10 Oct 2019, 25 Oct 2019, No
+Sue, Create Bank-app, Code bank-app according to the agreed design., 23 Dec 2022, 23 Jan 2023, No
+Anne, UI Bank-app, Finalize user interface for the app., 23 Dec 2022, 28 Dec 2022, No
+Jane, Assign Code blocks, Assign blocks of the bank-app to the developers., 23 Dec 2022, 26 Dec 2022, No
