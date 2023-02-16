@@ -43,6 +43,11 @@ In this task, you will be creating a program for a small business that can help 
  ○ If the user chooses ‘vm’ to view the tasks that are assigned to them, only display all the tasks that have been assigned to the user that is currently 
    logged-in in a user-friendly, easy to read manner.
    
+    
+ 1. Now format your program so that: 
+   a. Only the user with the username ‘admin’ is allowed to register users. 
+   b. The admin user is provided with a new menu option that allows them to display statistics. When this menu option is selected, the total number of 
+   tasks and the total number of users should be displayed in a user-friendly manner.
    
  
    
