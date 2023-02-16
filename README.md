@@ -25,8 +25,9 @@ In this task, you will be creating a program for a small business that can help 
   The user should repeatedly be asked to enter a valid username and password until they provide appropriate credentials.
   
   The following menu should be displayed once the user has successfully logged in: 
-  "Please select one of the following options
-   r - register a user/ a - add task/ va - view all tasks/ vm - view my tasks/ e - exit"
+ 
+ "Please select one of the following options
+   / r - register a user/ a - add task/ va - view all tasks/ vm - view my tasks/ e - exit"
   
  ○ If the user chooses ‘r’ to register a user, the user should be prompted for a new username and password. The user should also be asked to confirm the 
    password. If the value entered to confirm the password matches the value of the password, the user name and password should be written to user.txt in 
