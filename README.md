@@ -13,10 +13,10 @@ In this task, you will be creating a program for a small business that can help 
    ■ The due date for the task.
    ■ Either a ‘Yes’ or ‘No’ value that specifies if the task has been completed yet.
 
-○ user.txt stores the username and password for each user that has permission to use the program (task_manager.py). Note that this text file already      
+○ user.txt stores the username and password for each user that has permission to use the program. Note that this text file already      
   contains one default user that has the username,‘admin’and the password, ‘adm1n’. The username and password for each user must be written to this file 
   in the following format:
-  ■ First,the username followed by a comma, a space and then the password.
+  ■ First, the username followed by a comma, a space and then the password.
   ■ One username and corresponding password per line.
 
 ● Your program should allow your users to do the following:
