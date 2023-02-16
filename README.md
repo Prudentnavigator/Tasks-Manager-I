@@ -32,3 +32,17 @@ In this task, you will be creating a program for a small business that can help 
  ○ If the user chooses ‘r’ to register a user, the user should be prompted for a new username and password. The user should also be asked to confirm the 
    password. If the value entered to confirm the password matches the value of the password, the user name and password should be written to user.txt in 
    the appropriate format.
+     
+ ○ If the user chooses ‘a’ to add a task, the user should be prompted to enter the username of the person the task is assigned to, the title of the task, a 
+   description of the task and the due date of the task.  The data about the new task should be written to tasks.txt. The date on which the task is 
+   assigned should be the current date. Also assume that whenever you add a new task, the value that indicates whether the task has been completed or not 
+   is ‘No’.
+   
+ ○ If the user chooses ‘va’ to view all tasks, display the information for each task on the screen in an easy to read format.
+ 
+ ○ If the user chooses ‘vm’ to view the tasks that are assigned to them, only display all the tasks that have been assigned to the user that is currently 
+   logged-in in a user-friendly, easy to read manner.
+   
+   
+ 
+   
